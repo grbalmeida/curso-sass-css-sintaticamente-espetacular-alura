@@ -34,6 +34,12 @@ nav ul li a:hover {
   opacity: 0.9;
   border-radius: 45px;
 }
+@media (max-width: 700px) {
+  .banner .inner-banner {
+    padding: 1rem;
+    text-align: center;
+  }
+}
 .banner .inner-banner h1 {
   font-size: 3rem;
   color: #495371;
@@ -64,9 +70,20 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-evenly;
 }
+@media (max-width: 700px) {
+  #servicos .cards {
+    flex-direction: column;
+  }
+}
 #servicos .cards .card {
   width: 360px;
   text-align: center;
+}
+@media (max-width: 700px) {
+  #servicos .cards .card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 }
 #servicos .cards .card h5 {
   font-size: 2rem;
@@ -108,6 +125,11 @@ nav ul li a:hover {
   border: 4px solid white;
   background-color: white;
 }
+@media (max-width: 700px) {
+  #cupom .input {
+    width: auto;
+  }
+}
 #cupom .input input {
   border-radius: 20px;
   height: 40px;
@@ -116,6 +138,11 @@ nav ul li a:hover {
   outline: none;
   text-align: center;
   font-size: 26px;
+}
+@media (max-width: 700px) {
+  #cupom .input input {
+    width: 100%;
+  }
 }
 #cupom .input:hover, #cupom .input:focus-within {
   box-shadow: 1px 1px 8px 1px #495371;
@@ -170,4 +197,9 @@ footer i {
 #curiosidades p {
   margin-top: 5px;
   color: #495371;
+}
+@media (max-width: 700px) {
+  #curiosidades img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
